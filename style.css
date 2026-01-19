@@ -129,7 +129,22 @@ body {
   display: flex;
   gap: 15px;
   padding-bottom: 30px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+ scroll-behavior: smooth;
+  scrollbar-width: none;        /* Firefox */
 }
+
+.stories-bar::-webkit-scrollbar {
+  display: none;                /* Chrome / Edge / Safari */
+}
+
+.story-item {
+  flex: 0 0 auto;               /* prevents shrinking */
+}
+
 
 .story-item {
   text-align: center;
@@ -248,6 +263,9 @@ body {
   border-radius: 50%;
   background-size: cover;
   background-position: center;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
 }
 .suggested-header {
   display: flex;

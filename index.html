@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="responsive.css" />
 </head>
 
-<body class="dark-mode">
+<body class="light-mode">
 
 <nav class="responsive-nav">
   <div class="nav-links">
@@ -25,10 +25,10 @@
 <nav class="responsive-nav-bottom">
   <div class="nav-links-bottom">
     <div class="nav-item active"><img src="assets/icons/home.png"></div>
-    <div class="nav-item active"><img src="assets/icons/reel.png"></div>
-    <div class="nav-item active"><img src="assets/icons/messenger.png"></div>
+    <div class="nav-item active" id="themeToggle"><img id="themeIcon" src="/assets/icons/light-mode.png"></div>
+    <div class="nav-item active"><img src="assets/icons/send.png"></div>
     <div class="nav-item active"><img src="assets/icons/search-interface-symbol.png"></div>
-    <div class="nav-item active"><img src="assets/profile/profile1.jpg"></div>
+    <div class="nav-item nav-item-profile active "><img src="assets/profile/profile1.jpg"></div>
   </div>
 </nav>
 
@@ -46,16 +46,27 @@
     <div class="nav-item"><img src="assets/icons/plus.png"><span>Create</span></div>
     <div class="nav-item profile"><img src="assets/profile/profile1.jpg"><span>Profile</span></div>
   </div>
-
   <div class="nav-more">
     <img src="assets/icons/menu.png"><span>More</span>
   </div>
+      <div class="nav-item" id="themeToggle">
+      <img id="themeIcon" src="/assets/icons/light-mode.png">
+      <span id="themeText">Light Mode</span>
+    </div>
 </nav>
 
 <main class="content-container">
 <section class="feed-section">
 
   <div class="stories-bar">
+    <div class="story-item">
+      <div class="circle"><img src="assets/profile/ig.jpg"></div>
+      <p>Instagram</p>
+    </div>
+    <div class="story-item">
+      <div class="circle"><img src="assets/profile/one-direct.jpg"></div>
+      <p>onedirection</p>
+    </div>
     <div class="story-item">
       <div class="circle"><img src="assets/profile/profile1.jpg"></div>
       <p>jl_cadilo</p>
@@ -120,7 +131,7 @@
           <img src="assets/icons/tag.png">
         </div>
       </div>
-      <p>Thank you @jl_cadilo</p>
+      <p> @jl_cadilo</p>
     </div>
   </article>
 
@@ -150,7 +161,33 @@
       <p>Drawing by @jl_cadilo &lt;3</p>
     </div>
   </article>
+  
+    <article class="post">
+    <div class="post-header">
+      <div class="user-info">
+        <div class="mini-avatar" style="background-image:url('assets/profile/profile1.jpg')"></div>
+        <strong>jl_cadilo</strong>
+        <span class="time">• 2w</span>
+      </div>
+      <img src="assets/icons/menu-dot.png" class="options">
+    </div>
 
+    <img src="assets/post/3.jpeg" class="post-img">
+
+    <div class="post-footer">
+      <div class="post-actions">
+        <div class="left-actions">
+          <img src="assets/icons/heart.png">
+          <img src="assets/icons/messenger.png">
+          <img src="assets/icons/share.png">
+        </div>
+        <div class="right-actions">
+          <img src="assets/icons/tag.png">
+        </div>
+      </div>
+      <p>Its that you Justine?? daymm HAHAHA</p>
+    </div>
+  </article>
 </section>
 
 <aside class="suggestions-section">
@@ -182,6 +219,23 @@
     <div>
       <strong>eiirikr_</strong>
       <p class="sub-text">followed by @jennierubyjane</p>
+    </div>
+    <button class="follow-btn">Follow</button>
+  </div>
+
+    <div class="suggestion-item">
+    <div class="mini-avatar" style="background-image:url('assets/profile/cat.jpg')"></div>
+    <div>
+      <strong>im-a-cat</strong>
+      <p class="sub-text">followed by @jennierubyjane + 1more</p>
+    </div>
+    <button class="follow-btn">Follow</button>
+  </div>
+      <div class="suggestion-item">
+    <div class="mini-avatar" style="background-image:url('assets/profile/profile6.jpg')"></div>
+    <div>
+      <strong>justineeee</strong>
+      <p class="sub-text">followed by @jennierubyjane + 3more</p>
     </div>
     <button class="follow-btn">Follow</button>
   </div>

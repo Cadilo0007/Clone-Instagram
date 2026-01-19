@@ -49,10 +49,14 @@ body {
 }
 
 @media (max-width: 768px) {
+
   body {
     flex-direction: column;
     margin: 0;
+    overflow-x: hidden;
   }
+
+  /* TOP NAV */
   .responsive-nav {
     display: flex;
     width: 100%;
@@ -66,11 +70,14 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
   .nav-logo img {
-    width: 150px;
-    margin: 0 20px;
+    width: 120px;
+    margin-left: 16px;
     filter: var(--icon-filter);
   }
+  .nav-logo img { width: 150px; margin: 0 20px; filter: var(--icon-filter); }
+  /* BOTTOM NAV */
   .responsive-nav-bottom {
     display: flex;
     width: 100%;
@@ -84,36 +91,64 @@ body {
     align-items: center;
     justify-content: space-around;
   }
+  .nav-item-profile img {
+    filter: invert(0);
+    border-radius: 50%;
+  }
   .nav-links-bottom {
     display: flex;
-    gap: 45px;
-  }
-  .side-nav {
-    display: none;
-    width: 100%;
-    height: auto;
-    position: relative;
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
+    gap: 40px;
   }
 
-  main {
-    margin-left: 0;
-    padding: 10px;
+  /* HIDE DESKTOP SIDEBAR */
+  .side-nav {
+    display: none;
   }
-    .content-container {
-        margin: auto;
-        display: flex;
-        width: -webkit-fill-available;
-        /* justify-content: center; */
-        padding-top: 100px;
-        /* align-items: center; */
-    }
+
+  /* MAIN CONTENT */
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-container {
+    margin: 0;
+    width: 100%;
+    padding-top: 70px;    /* space for top nav */
+    padding-bottom: 80px; /* space for bottom nav */
+    display: flex;
+    justify-content: center;
+  }
+
+  .feed-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* STORIES */
+  .stories-bar {
+    overflow-x: auto;
+  }
+
+  .story-item {
+    flex: 0 0 auto;
+  }
+
+  /* HIDE RIGHT SIDE */
   .suggestions-section {
     display: none;
   }
 
+  /* HIDE FLOATING BUTTON */
   .floating-messages {
     display: none;
+  }
+
+  /* POSTS */
+  .post {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
   }
 }
