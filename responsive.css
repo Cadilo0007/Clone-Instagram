@@ -1,0 +1,119 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+
+:root {
+  /* DARK MODE (default) */
+  --bg-main: #111;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #111;
+  --bg-hover: #1a1a1a;
+
+  --border-color: #262626;
+
+  --text-main: #fafafa;
+  --text-muted: #a8a8a8;
+
+  --icon-filter: invert(1);
+}
+
+/* LIGHT MODE */
+body.light-mode {
+  --bg-main: #ffffff;
+  --bg-secondary: #f2f2f2;
+  --bg-card: #ffffff;
+  --bg-hover: #efefef;
+
+  --border-color: #dbdbdb;
+
+  --text-main: #000000;
+  --text-muted: #737373;
+
+  --icon-filter: invert(0);
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: var(--bg-main);
+  color: var(--text-main);
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    margin: 0;
+  }
+  .responsive-nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo img {
+    width: 150px;
+    margin: 0 20px;
+    filter: var(--icon-filter);
+  }
+  .responsive-nav-bottom {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-links-bottom {
+    display: flex;
+    gap: 45px;
+  }
+  .side-nav {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  main {
+    margin-left: 0;
+    padding: 10px;
+  }
+    .content-container {
+        margin: auto;
+        display: flex;
+        width: -webkit-fill-available;
+        /* justify-content: center; */
+        padding-top: 100px;
+        /* align-items: center; */
+    }
+  .suggestions-section {
+    display: none;
+  }
+
+  .floating-messages {
+    display: none;
+  }
+}
