@@ -100,12 +100,10 @@ body {
     gap: 40px;
   }
 
-  /* HIDE DESKTOP SIDEBAR */
   .side-nav {
     display: none;
   }
 
-  /* MAIN CONTENT */
   main {
     margin: 0;
     padding: 0;
@@ -114,8 +112,8 @@ body {
   .content-container {
     margin: 0;
     width: 100%;
-    padding-top: 70px;    /* space for top nav */
-    padding-bottom: 80px; /* space for bottom nav */
+    padding-top: 70px;    
+    padding-bottom: 80px; 
     display: flex;
     justify-content: center;
   }
@@ -128,7 +126,8 @@ body {
 
   /* STORIES */
   .stories-bar {
-    overflow-x: auto;
+        overflow-x: auto;
+        padding: 0 14px;
   }
 
   .story-item {
@@ -150,5 +149,46 @@ body {
     border-left: none;
     border-right: none;
     border-radius: 0;
+  }
+
+  .profile-avatar img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px;
+  }
+  .username-section .edit-btn{
+    display: none;
+  }
+  .username-section .settings-icon {
+    display: none;
+  }
+  .username-section h2 {
+    text-align: start;
+    margin: 0 0 5px 0;
+  }
+  .stats {
+    justify-content: space-between;
+  }
+  .tab-tag {
+    display: none;
+  }
+}
+/* ================= Responsive ================= */
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  
+  .tabs {
+    gap: 100px;
   }
 }
