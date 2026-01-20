@@ -117,7 +117,10 @@ body {
     display: flex;
     justify-content: center;
   }
-
+  .profile-container {
+    width: 100%;
+    padding-top: 70px;    
+  }
   .feed-section {
     width: 100%;
     max-width: 100%;
@@ -172,6 +175,11 @@ body {
   .tab-tag {
     display: none;
   }
+  .profile-details {
+  flex: 0;
+  min-width: 0;
+}
+
 }
 /* ================= Responsive ================= */
 
