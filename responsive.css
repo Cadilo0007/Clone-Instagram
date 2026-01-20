@@ -97,8 +97,10 @@ body {
   }
   .nav-links-bottom {
     display: flex;
-    gap: 40px;
+    justify-content: space-around;
+    width: 100%;
   }
+
 
   .side-nav {
     display: none;
@@ -119,8 +121,10 @@ body {
   }
   .profile-container {
     width: 100%;
-    padding-top: 70px;    
+    max-width: 100%;
+    overflow-x: hidden;
   }
+
   .feed-section {
     width: 100%;
     max-width: 100%;
@@ -194,8 +198,8 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 600px) {
-  
   .tabs {
-    gap: 100px;
+    justify-content: space-around;
+    gap: 0;
   }
 }
