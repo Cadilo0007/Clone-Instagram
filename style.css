@@ -84,14 +84,14 @@ a {
 
 .nav-item:hover,
 .nav-more:hover {
-  background: var(--bg-hover);
+  /* background: var(--bg-hover); */
   transform: translateX(4px);
 }
 
-.nav-item.active {
+/* .nav-item.active {
   background: var(--bg-secondary);
   font-weight: 600;
-}
+} */
 
 .nav-item img,
 .nav-more img {
@@ -178,8 +178,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
 .circle-new {
   padding: 2px;
@@ -188,14 +188,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
     border: solid 2px var(--text-muted);
 }
 
 .circle img {
-  width: 85px;
-  height: 85px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 2px solid var(--bg-card);
 }
@@ -208,8 +208,8 @@ a {
 }
 
 .circle-stories img {
-  width: 85px;
-  height: 85px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: 2px solid var(--bg-card);
 }
@@ -428,7 +428,8 @@ a {
 .edit-btn {
   padding: 8px 14px;
   background: rgb(54, 60, 68, 0.3);
-  border-radius: 7px;
+  border-radius: 50px;
+  corner-shape: squircle;
   cursor: pointer;
   font-weight: 500;
   color: var(--text-main);
@@ -513,5 +514,3 @@ a {
 .profile-posts .post-grid img:hover {
   opacity: 0.8;
 }
-
-/* ================= Responsive ================= */
